@@ -32,19 +32,18 @@ Graphical Representation:
 
 
 
-## SARSA LEARNING ALGORITHM
-Include the steps involved in the SARSA Learning algorithm
 
-## SARSA LEARNING FUNCTION:
+## SARSA LEARNING ALGORITHM:
 Initialize the Q-values arbitrarily for all state-action pairs.
 Repeat for each episode:
 1. Initialize the starting state. 
 2. Repeat for each step of episode: a. Choose action from state using policy derived from Q (e.g., epsilon-greedy). b. Take action, observe reward and next state. c. Choose action from next state using policy derived from Q (e.g., epsilon-greedy). d. Update Q(s, a) := Q(s, a) + alpha * [R + gamma * Q(s', a') - Q(s, a)] e. Update the state and action. 
 3. Until state is terminal.
 Until performance converges.
-
+## program:
 ### Name:Revathi D
 ### Register Number:212221240045
+```
 def sarsa(env,
           gamma=1.0,
           init_alpha=0.5,
@@ -83,6 +82,7 @@ def sarsa(env,
     V = np.max(Q, axis=1)
     pi = lambda s: np.argmax(Q[s])
     return Q, V, pi, Q_track, pi_track
+```
 
 ## OUTPUT:
 optimal policy, optimal value function , success rate for the optimal policy.
