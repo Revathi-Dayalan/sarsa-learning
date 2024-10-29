@@ -27,7 +27,7 @@ For example, if the agent is in state S and takes the "R" action, then there is 
 Rewards:
 The agent receives a reward of +1 for reaching the goal state (G). The agent receives a reward of 0 for all other states.
 
-Graphical Representation:
+GRAPHICAL REPRESENTATION:
 ![image](https://github.com/user-attachments/assets/c5e007e7-0063-4c1f-8ce1-36b30ae6a648)
 
 
